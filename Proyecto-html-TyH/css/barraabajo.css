@@ -1,0 +1,25 @@
+.h5live {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box h5 {
+    margin: 0 0 10px 0;
+}
+
+.box select {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+   
+}

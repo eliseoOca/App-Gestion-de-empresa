@@ -1,0 +1,174 @@
+
+header {
+    background-color: #f5dd05;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    padding-left: 100px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 50px;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+li a {
+    display: block;
+    color: #46427b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #001f3f;
+    border-radius: 5px;
+    color: white;
+}
+
+h1.titulo-prove {
+    color: #001f3f;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #46427b;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: aqua;
+}
+
+
+
+/*.invoice header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #001f3f;
+}*/
+
+.company-logo {
+    height: 100px;
+    width: auto;
+}
+
+img.company-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.company-details {
+    text-align: center;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #001f3f;
+}
+
+th {
+    background-color: #f5dd05;
+    color: #001f3f;
+}
+
+tfoot tr td {
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #46427b;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: #001f3f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #f5dd05;
+    color: #001f3f;
+}
+
+.title-container{
+    text-align: center;
+}
+
+div.button-container{
+    background-color: #f5dd05;
+}
+
+div.header-container{
+    background-color: #f5dd05;
+}

@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1.titulo-prove {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el ancho */
+}
+
+/* Form Styles */
+.formAgenda {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"] {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el ancho */
+}
+
+.fireButton {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fireButton:hover {
+    background-color: #c9302c;
+}
+
+button.fireButton {
+    background-color: #d9534f;
+    margin-right: 10px;
+}
+
+button.fireButton:hover {
+    background-color: #c9302c;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    white-space: nowrap;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.action-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.action-button.delete-button:hover img {
+    filter: brightness(0.8);
+}
+
+.action-button.update-button:hover img {
+    filter: brightness(1.2);
+}
+
+/* Calculator Styles */
+.calculator {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #333;
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el ancho */
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 40px;
+    background: #222;
+    border: none;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 18px;
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.operator {
+    background-color: #d9534f;
+}
+
+button.operator:hover {
+    background-color: #c9302c;
+}
+
+button.all-clear {
+    background-color: #f0ad4e;
+}
+
+button.all-clear:hover {
+    background-color: #ec971f;
+}
+
+button.equal-sign {
+    background-color: #f0ad4e;
+}
+
+button.equal-sign:hover {
+    background-color: #ec971f;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="date"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .calculator {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .calculator-keys {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    table {
+        font-size: 14px;
+        /* Reducir el tamaño del texto en tablas para pantallas más pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1.titulo-prove {
+        font-size: 20px;
+        /* Reducir el tamaño del título */
+        margin: 15px 0;
+    }
+
+    .fireButton {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="date"] {
+        font-size: 14px;
+        /* Reducir el tamaño de la fuente en los campos de entrada */
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+}

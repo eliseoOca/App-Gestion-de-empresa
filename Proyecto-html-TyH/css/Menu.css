@@ -1,0 +1,187 @@
+header {
+  background-color: #f5dd05;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Alinear elementos al inicio y al final */
+  align-items: center;
+  
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  padding-left: 100px;
+}
+
+.logo2 img {
+  opacity: 0.5; /* Un valor entre 0 (completamente transparente) y 1 (completamente opaco) */
+  width: 1200px; /* Cambia el valor según el tamaño deseado */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  header {
+      flex-direction: column; /* Cambiar la dirección de la flexbox a columna */
+      align-items: center; /* Alinear elementos al centro */
+  }
+
+  .logo img {
+      height: 50px; /* Reducir la altura del logo */
+      padding-left: 0; /* Eliminar el relleno a la izquierda */
+      margin-bottom: 10px; /* Agregar espacio entre el logo y el menú */
+  }
+
+  ul {
+      flex-direction: column; /* Cambiar la dirección de la flexbox a columna */
+      align-items: center; /* Alinear elementos al centro */
+  }
+
+  li {
+      margin: 10px 0; /* Añadir margen arriba y abajo a los elementos del menú */
+  }
+}
+
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+  }
+  
+  li {
+      margin-right: 20px;
+  }
+  
+  li:last-child {
+      margin-right: 0;
+  }
+  
+  li a {
+      display: block;
+      color: #46427b;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  
+  li a:hover {
+      background-color: #001f3f;
+      border-radius: 10px;
+  }
+
+  .titulo-prove {
+      text-align: center; /* Centrar el texto */
+      border-bottom: 2px solid #001f3f; /* Subrayado azul oscuro */
+      display: inline-block; /* Para que el subrayado no ocupe todo el ancho */
+      margin-left: 300px;
+  }
+
+  #clock {
+      font-family: 'Arial', sans-serif;
+      font-size: em;
+      color: #130000;
+      background-color: #f5dd05;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      margin-top: 2px;
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+  
+  .invoice {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      
+      background-color: #ffffff; /* Asegúrate de que el fondo sea blanco */
+  }
+  
+  header, .customer-details, .invoice-details, footer {
+      margin-bottom: 20px;
+
+  }
+
+  .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .company-logo {
+      max-height: 100px; /* Ajusta según el tamaño deseado */
+      margin-right: 20px;
+  }
+  header {
+      text-align: center;
+  }
+  
+  header h1 {
+      margin-left: px;
+  }
+  
+  .company-details h2 {
+      margin: 0;
+  }
+
+  .details-container {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+  }
+  
+  table, th, td {
+      border: 1px solid #ddd;
+  }
+  
+  th, td {
+      padding: 10px;
+      text-align: left;
+  }
+  
+  th {
+      background-color: #f4f4f4;
+  }
+  
+  tfoot td {
+      font-weight: bold;
+  }
+  
+  footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+  }
+
+
+  .h5live {
+      display: flex;
+      gap: 10px; /* Espacio entre cada h5 */
+  }
+  
+  .h5live h5 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 10px;
+      border: 1px solid #ddd; /* Borde opcional para visualización */
+      border-radius: 5px; /* Bordes redondeados opcionales */
+      background-color: #f9f9f9; /* Color de fondo opcional */
+  }

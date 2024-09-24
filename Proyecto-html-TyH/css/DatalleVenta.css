@@ -1,0 +1,189 @@
+/* Estilo base para pantallas grandes */
+header {
+    background-color: #f5dd05;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Alinear elementos al inicio y al final */
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+li a {
+    display: block;
+    color: #46427b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #001f3f;
+    border-radius: 10px;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    padding-left: 100px;
+}
+
+.titulo-prove {
+    text-align: center;
+    border-bottom: 2px solid #001f3f;
+    display: inline-block;
+    margin-left: 300px;
+}
+
+#clock {
+    font-family: 'Arial', sans-serif;
+    font-size: em;
+    color: #130000;
+    background-color: #f5dd05;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.containerVenta {
+    display: flex; /* Usar flexbox */
+}
+
+.formVenta {
+    width: 300px;
+    margin: 0 auto;
+    margin-left: 0;
+}
+
+.tableVenta {
+    float: right;
+    margin-left: 20px;
+}
+
+.table-containerVenta {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Botón de acción */
+.fireButton {
+    background-color: orange;
+    border: none;
+    color: rgb(19, 18, 18);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.fireButton:hover {
+    background-color: darkorange;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* --- Responsividad con media queries --- */
+
+/* Para pantallas más pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambiar la dirección a columna */
+        text-align: center; /* Centrar los elementos en pantallas pequeñas */
+    }
+
+    .logo img {
+        height: 50px; /* Reducir el tamaño del logo */
+        padding-left: 0; /* Eliminar el padding en pantallas pequeñas */
+    }
+
+    ul {
+        flex-direction: column; /* Hacer que la navegación se apile verticalmente */
+        align-items: center; /* Centrar los elementos del menú */
+    }
+
+    li {
+        margin: 10px 0; /* Aumentar el espacio entre los elementos del menú */
+    }
+
+    .titulo-prove {
+        margin-left: 0; /* Centrar el título sin márgenes adicionales */
+    }
+
+    .containerVenta {
+        flex-direction: column; /* Apilar los elementos del formulario y la tabla verticalmente */
+    }
+
+    .formVenta, .tableVenta {
+        width: 100%; /* Asegurar que el formulario y la tabla ocupen el ancho completo */
+        margin: 0; /* Eliminar márgenes */
+    }
+
+    .tableVenta {
+        float: none; /* Eliminar el float para que la tabla se apile debajo del formulario */
+    }
+
+    .table-containerVenta {
+        max-height: none; /* Permitir que la tabla crezca si es necesario */
+    }
+
+    #clock {
+        font-size: 1.2em; /* Ajustar el tamaño del reloj en pantallas pequeñas */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px; /* Reducir aún más el tamaño del logo */
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .fireButton {
+        font-size: 14px; /* Reducir el tamaño del texto en el botón */
+        padding: 8px 16px; /* Reducir el padding del botón */
+    }
+
+    .formVenta label {
+        width: 100%; /* Asegurar que las etiquetas ocupen el ancho completo */
+    }
+
+    .formVenta input[type="text"],
+    .formVenta input[type="number"],
+    .formVenta input[type="email"],
+    .formVenta input[type="submit"],
+    .formVenta button[type="button"] {
+        width: 100%; /* Hacer que los campos ocupen todo el ancho disponible */
+    }
+
+    #clock {
+        font-size: 1em; /* Ajustar el tamaño del reloj en pantallas muy pequeñas */
+    }
+}
